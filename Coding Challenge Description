@@ -1,0 +1,11 @@
+Coding Challenge
+·        Write a Python or PowerShell script that accepts a file hash value (MD5 or SHA256) from the user and submits the hash to VirusTotal via an API call.
+·        If VirusTotal finds more than 5 AV engines detected the file as malicious, output a message that informs the user and tells them how many AV engines detected the file.
+·        If VirusTotal finds that less than 5 AV engines reported the file as malicious, output a message that indicates the file may be malicious and tells the user how many AV engines detected the file.
+·        If no AV engines indicate the file is malicious, output a message that tells the user that the file is clean.
+This script should also:
+·        Validate user input to verify that the user has entered a valid hash.
+·        Require the user to enter their API information (required to make API calls to VirusTotal).
+·        Return an error message if an invalid hash is entered by the user or if they do not input their API information.
+·        Output the API call's status code (200, 404, etc.)
+·        Inform the user that the API call failed if status code is not 200.
